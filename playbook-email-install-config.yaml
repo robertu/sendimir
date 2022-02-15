@@ -1,0 +1,9 @@
+- hosts: debian
+  become: no
+  remote_user: root
+  tasks:
+   - name: Transfer the script
+     copy: src=email.sh dest=/tmp/email2.sh mode=0700
+
+   - name: Execute the script
+     command: bash /tmp/email2.sh
