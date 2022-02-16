@@ -24,6 +24,7 @@ then
 exit 
 fi
 rm -r /etc/exim4/update-exim4.conf.conf
+touch /etc/exim4/update-exim4.conf.conf
 echo "dc_eximconfig_configtype=$exicf" >> /etc/exim4/update-exim4.conf.conf
 echo "dc_other_hostnames=$hstnm.$dnsnm" >> /etc/exim4/update-exim4.conf.conf
 echo "dc_local_interfaces='127.0.0.1 ;::1'" >> /etc/exim4/update-exim4.conf.conf
