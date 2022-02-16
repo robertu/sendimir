@@ -1,5 +1,5 @@
-- hosts: debian
-  become: no
+- hosts: linux
+  become: yes
   remote_user: root
   tasks:
    - name: Transfer the script
