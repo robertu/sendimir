@@ -19,7 +19,7 @@
     #dc_localdelivery='maildir_home
     lcdlv="'"maildir_home"'"
 #ustaw konfiguracje.
-if [ -s "/home/jakub/Desktop/test.txt" ]
+if [ -s "/etc/exim4/update-exim4.conf.conf" ]
 then 
 exit 
 fi
