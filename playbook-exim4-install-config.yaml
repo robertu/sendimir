@@ -3,7 +3,7 @@
   remote_user: root
   tasks:
    - name: Transfer the script
-     copy: src=email.sh dest=/tmp/email2.sh mode=0700
+     copy: src=ic.sh dest=/tmp/ic2.sh mode=0700
 
    - name: Execute the script
-     command: bash /tmp/email2.sh
+     command: bash /tmp/ic2.sh
