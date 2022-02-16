@@ -20,6 +20,10 @@ c="'"
     #dc_localdelivery='maildir_home
     lcdlv="'"maildir_home"'"
 #ustaw konfiguracje.
+if [ -s "/home/jakub/Desktop/test.txt" ]
+then 
+exit 
+fi
 rm -r /etc/exim4/update-exim4.conf.conf
 echo "dc_eximconfig_configtype=$exicf" >> /etc/exim4/update-exim4.conf.conf
 echo "dc_other_hostnames=$hstnm.$dnsnm" >> /etc/exim4/update-exim4.conf.conf
@@ -34,4 +38,4 @@ echo "dc_use_split_config='false'" >> /etc/exim4/update-exim4.conf.conf
 echo "dc_mailname_in_oh='true'" >> /etc/exim4/update-exim4.conf.conf
 echo "dc_localdelivery=$lcdlv" >> /etc/exim4/update-exim4.conf.conf
 #zainstaluj exim4 na konfiguracjii
-#apt install exim4
+apt install exim4
