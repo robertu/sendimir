@@ -1,9 +1,7 @@
 #bin/bash
 #Skrypt instalujący i konfigurujący wstępnie exim4 i SMTP
 #aby tylko skonfigurować, bez instalacji, należy wpisać # przed "apt install exim4" w 42 linijce kodu
-#aby edytować konfiguracje, zmień variables poniżej
-#preconfig
-apt update 
+#aby edytować konfiguracje, zmień variables poniżej 
 #ważniejsze variables w /etc/exim4/update-exim4.conf.conf
     #dc_eximconfig_configtype
     exicf="'"internet"'"
@@ -39,4 +37,5 @@ echo "dc_use_split_config='false'" >> /etc/exim4/update-exim4.conf.conf
 echo "dc_mailname_in_oh='true'" >> /etc/exim4/update-exim4.conf.conf
 echo "dc_localdelivery=$lcdlv" >> /etc/exim4/update-exim4.conf.conf
 #zainstaluj exim4 na konfiguracjii
+apt update
 apt install exim4
