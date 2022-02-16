@@ -1,0 +1,6 @@
+ 
+ [linux]
+ 192.168.1.1
+ [linux:vars]
+ ansible_user=root
+ ansible_password=password
