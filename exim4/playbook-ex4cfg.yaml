@@ -1,0 +1,15 @@
+- hosts: debian
+  become: no
+  remote_user: root
+  tasks:
+   - name: Transfer the script 1
+     copy: src=ex4config.sh dest=/tmp/ex4config2.sh mode=0700
+     
+   - name: Transfer the script 2
+     copy: src=delpost.sh dest=/tmp/delpost2.sh mode=0700
+     
+   - name: Destroy postfix 2
+     command: bash /tmp/delpost.sh
+
+   - name: Execute the script 1
+     command: bash /tmp/ex4config.sh
