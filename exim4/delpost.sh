@@ -1,4 +1,5 @@
 #!/bin/bash
 #purge postfix
-apt purge postfix
+echo | apt purge postfix
 exit
+
