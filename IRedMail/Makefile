@@ -10,4 +10,4 @@ sendmir: pobierz iRedMail.sh
 	endif
 zacznij insalacje iRedMail: sendmir
 	echo 4xPOGf8lZL6tlqos | sudo ./iredmail.sh
-######################################
+#############
